@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+
+{% block content %}
+
+<style>
+    .wlcm{
+        margin-top: 13px;
+        margin-left: -9%;
+        font-size: 30px;
+        position: absolute;
+        background-color: black;
+        color: white;
+    }
+    .status{
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 70%;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+    }
+</style>
+<h1 class = "wlcm">Welcome {{ request.user.username }}</h1>
+<h1 class = "status">Auth status: {{request.user.is_authenticated}}</h1>
+<br>
+<br>
+<p>
+    
+</p>
+{% endblock %}
