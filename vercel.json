@@ -24,7 +24,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "poll/wsgi.py"
+            "dest": "graphical_pwd_auth/wsgi.py"
         }
     ]
 }
